@@ -1,0 +1,49 @@
+{
+  "name": "@baseline-ui/blocks",
+  "version": "0.9.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "style": "dist/index.css",
+  "files": [
+    "dist",
+    "License.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./jsx-runtime": {
+      "import": "./dist/jsx-runtime/index.mjs",
+      "require": "./dist/jsx-runtime/index.js",
+      "types": "./dist/jsx-runtime/index.d.ts"
+    },
+    "./jsx-dev-runtime": {
+      "import": "./dist/jsx-dev-runtime/index.mjs",
+      "require": "./dist/jsx-dev-runtime/index.js",
+      "types": "./dist/jsx-dev-runtime/index.d.ts"
+    }
+  },
+  "dependencies": {
+    "@baseline-ui/utils": "0.9.0",
+    "@baseline-ui/tokens": "0.9.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2 || ^18.0.0",
+    "react-dom": "^17.0.2 || ^18.0.0"
+  },
+  "source": "./src/index.ts",
+  "keywords": [],
+  "author": "",
+  "license": "SEE LICENSE IN https://pspdfkit.com/legal/License.pdf",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup && ./scripts/fixTypes.ts",
+    "build:docs": "typedoc --useCodeBlocks --enumMembersFormat table --hidePageTitle --parametersFormat table --propertiesFormat table --hidePageHeader --indexFormat table --typeDeclarationFormat table --hideBreadcrumbs --outputFileStrategy modules"
+  }
+}

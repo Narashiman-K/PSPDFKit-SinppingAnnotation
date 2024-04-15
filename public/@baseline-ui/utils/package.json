@@ -1,0 +1,29 @@
+{
+  "name": "@baseline-ui/utils",
+  "version": "0.9.0",
+  "description": "A collection of utility functions for Baseline UI",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "style": "dist/index.css",
+  "files": [
+    "dist",
+    "License.md"
+  ],
+  "source": "src/index.ts",
+  "dependencies": {
+    "@react-stately/color": "3.5.3"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN https://pspdfkit.com/legal/License.pdf",
+  "peerDependencies": {
+    "react": "^17.0.2 || ^18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --minify --dts --treeshake",
+    "build:docs": "typedoc --hidePageTitle --useCodeBlocks --parametersFormat table --hidePageHeader --hideBreadcrumbs false --outputFileStrategy modules"
+  }
+}

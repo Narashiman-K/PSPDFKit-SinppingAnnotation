@@ -1,0 +1,43 @@
+{
+  "name": "@baseline-ui/app",
+  "version": "0.9.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "style": "dist/index.css",
+  "files": [
+    "dist",
+    "License.md"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "SEE LICENSE IN https://pspdfkit.com/legal/License.pdf",
+  "dependencies": {
+    "@react-aria/utils": "^3.23.2",
+    "@react-spring/web": "^9.7.3",
+    "@react-types/shared": "^3.22.1",
+    "dompurify": "^3.0.9",
+    "granular-hooks": "^1.1.0",
+    "react-aria": "^3.32.1",
+    "@baseline-ui/core": "0.9.0",
+    "@baseline-ui/icons": "0.9.0",
+    "@baseline-ui/tokens": "0.9.0",
+    "@baseline-ui/translations": "0.9.0",
+    "@baseline-ui/utils": "0.9.0"
+  },
+  "devDependencies": {
+    "@vanilla-extract/recipes": "^0.5.1",
+    "@types/dompurify": "^3.0.5"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2 || ^18.0.0",
+    "react-dom": "^17.0.2 || ^18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --minify --clean --dts --treeshake"
+  }
+}
