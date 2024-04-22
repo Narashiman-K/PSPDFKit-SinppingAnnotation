@@ -1,10 +1,10 @@
 This is a # React + TypeScript + Vite Project
 -------------------
-cd inside the folder
-npm install
-npm install PSPDFKit
-npm install @baseline-UI/core @baseline-UI/app @baseline-UI/recipes @baseline-UI/blocks @baseline-UI/icons
-npm run dev
+
+1. Open a terminal and navigate to the project directory.
+2. Run npm i to install the project dependencies.
+3. Copy the PSPDFKit for Web library assets to the public directory by running: cp -R ./node_modules/pspdfkit/dist/pspdfkit-lib public/pspdfkit-lib
+4. You should now be able to run the project locally by executing npm run dev
 -------------------
 
 
