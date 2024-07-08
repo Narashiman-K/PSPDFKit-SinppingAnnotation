@@ -66,7 +66,7 @@ The user is solely responsible for determining the appropriateness of using or r
 
 ## About
 
-This project allows you to snip annotations in PDFs using PSPDFKit.
+This project allows you to snip annotations in PDFs using PSPDFKit. It basically acts as a snipping tool in windows, but for annotations in PDF. 
 
 ## Author
 
